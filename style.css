@@ -1,0 +1,98 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2f8a9e, #1c3f51);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Input Fields */
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border: 2px solid #45c2d2;
+}
+
+/* Button */
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #45c2d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #34a3ad;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-container h1 {
+        font-size: 2rem;
+    }
+}
